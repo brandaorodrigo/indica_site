@@ -1,5 +1,11 @@
 <?php
 
+session_start();
+
+if (@$_POST['user'] == 'indica' && @$_POST['pass'] == 'Z9a2c8w3.120987') {
+    $_SESSION['login'] = 1;
+}
+
 $db_host = 'mysql01-farm36.kinghost.net';
 $db_base = 'xt';
 $db_user = 'xt';
@@ -20,11 +26,6 @@ function select($sql) {
 
 $pdo = new PDO('mysql:host=' . $db_host .';dbname=' . $db_base, $db_user, $db_pass);
 
-$qtd_indica = select("SELECT count(*) AS qtd FROM `indica`");
-$streamer_usando = select("SELECT * FROM (SELECT `caller` AS canal, count(*) AS qtd FROM `indica` GROUP BY `caller`) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
-$streamer_indicado = select("SELECT * FROM (SELECT channel AS canal, count(*) AS qtd FROM `indica` GROUP BY channel) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
-$jogo_jogado = select("SELECT * FROM (SELECT game, count(*) AS qtd FROM `indica` GROUP BY game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
-
 ?><!DOCTYPE html>
 <html>
     <head>
@@ -39,26 +40,41 @@ $jogo_jogado = select("SELECT * FROM (SELECT game, count(*) AS qtd FROM `indica`
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-    <h2>STREAMERS USANDO !INDICA</h2>
-    <table>
-    <tr><th>#</th><th>CANAL</th><th>QTD</th></tr>
-    <?php foreach ($streamer_usando as $i => $s) : ?>
-        <tr><td><?php echo $i + 1?></td><td><a target="_blank" href="https://twitch.tv/<?php echo $s->canal ?>"><?php echo $s->canal ?></a></td><td><?php echo $s->qtd ?></td></tr>
-    <?php endforeach ?>
-    </table>
-    <h2>STREAMERS !INDICADOS</h2>
-    <table>
-    <tr><th>#</th><th>CANAL</th><th>QTD</th></tr>
-    <?php foreach ($streamer_indicado as $i => $s) : ?>
-        <tr><td><?php echo $i + 1 ?></td><td><a target="_blank" href="https://twitch.tv/<?php echo $s->canal ?>"><?php echo $s->canal ?></a></td><td><?php echo $s->qtd ?></td></tr>
-    <?php endforeach ?>
-    </table>
-    <h2>JOGO MAIS !INDICADO</h2>
-    <table>
-    <tr><th>#</th><th>JOGO</th><th>QTD</th></tr>
-    <?php foreach ($jogo_jogado as $i => $s) : ?>
-        <tr><td><?php echo $i + 1 ?></td><td><?php echo $s->game ?></td><td><?php echo $s->qtd ?></td></tr>
-    <?php endforeach ?>
-    </table>
+    <?php
+    $qtd_indica = select("SELECT count(*) AS qtd FROM `indica`");
+    $streamer_usando = select("SELECT * FROM (SELECT `caller` AS canal, count(*) AS qtd FROM `indica` GROUP BY `caller`) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
+    $streamer_indicado = select("SELECT * FROM (SELECT channel AS canal, count(*) AS qtd FROM `indica` GROUP BY channel) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
+    $jogo_jogado = select("SELECT * FROM (SELECT game, count(*) AS qtd FROM `indica` GROUP BY game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
+    if (!$_SESSION['login']) : ?>
+        <div style="margin:40px auto;display:block;width:300px;text-align:center;">
+            <form method="post">
+                Login <input type="text" name="user"><br><br>
+                Senha <input type="text" name="pass"><br><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    <?php else : ?>
+        <h2>STREAMERS USANDO !INDICA</h2>
+        <table>
+        <tr><th>#</th><th>CANAL</th><th>QTD</th></tr>
+        <?php foreach ($streamer_usando as $i => $s) : ?>
+            <tr><td><?php echo $i + 1?></td><td><a target="_blank" href="https://twitch.tv/<?php echo $s->canal ?>"><?php echo $s->canal ?></a></td><td><?php echo $s->qtd ?></td></tr>
+        <?php endforeach ?>
+        </table>
+        <h2>STREAMERS !INDICADOS</h2>
+        <table>
+        <tr><th>#</th><th>CANAL</th><th>QTD</th></tr>
+        <?php foreach ($streamer_indicado as $i => $s) : ?>
+            <tr><td><?php echo $i + 1 ?></td><td><a target="_blank" href="https://twitch.tv/<?php echo $s->canal ?>"><?php echo $s->canal ?></a></td><td><?php echo $s->qtd ?></td></tr>
+        <?php endforeach ?>
+        </table>
+        <h2>JOGO MAIS !INDICADO</h2>
+        <table>
+        <tr><th>#</th><th>JOGO</th><th>QTD</th></tr>
+        <?php foreach ($jogo_jogado as $i => $s) : ?>
+            <tr><td><?php echo $i + 1 ?></td><td><?php echo $s->game ?></td><td><?php echo $s->qtd ?></td></tr>
+        <?php endforeach ?>
+        </table>
+    <?php endif ?>
 </body>
 </html>

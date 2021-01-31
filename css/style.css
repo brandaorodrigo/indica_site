@@ -34,6 +34,11 @@ body{
   animation: color_change 12s infinite alternate;
 }
 
+.nav-link {
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
 /*Video Background*/
 .header{
   position: relative;
