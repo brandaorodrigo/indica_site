@@ -92,11 +92,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
-  opacity: .05;
-}
-
-.header .overlay-text h1{
-  text-align: left;
+  opacity: .1;
 }
 
 .wrap{
