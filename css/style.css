@@ -275,6 +275,12 @@ footer{
   color: #fff;
 }
 
+footer .copyright a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 991px){
   main article .container{
     padding: 1rem;
