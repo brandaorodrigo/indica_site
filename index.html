@@ -50,21 +50,55 @@
       <nav>
     </header>
     <main>
-      <article class="container-fluid bg-dark">
+      <article id="about" class="container-fluid bg-dark">
         <section class="row">
           <div class="col header">
             <div class="overlay"></div>
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+              <source src="assets/video/VIDEOBG.webm" type="video/webm">
             </video>
             <div class="overlay-text">
-              <h1 class="typewrite text-uppercase" data-period="2000" data-type='[ "100% CUSTOMIZÁVEL.", "CÓDIGO ABERTO.", "NÃO PRECISA DE CADASTRO.", "NÃO PRECISA DE NOSSO BOT, USE O SEU." ]'></h1>
+              <!--<h1 class="typewrite text-uppercase" data-period="2000" data-type='[ "100% CUSTOMIZÁVEL.", "CÓDIGO ABERTO.", "NÃO PRECISA DE CADASTRO.", "NÃO PRECISA DE NOSSO BOT, USE O SEU." ]'></h1>-->
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h1 class="text-uppercase fs-4 fw-bold pb-3">SEU CANAL, SUA IDENTIDADE.</h1>
+                    <p>
+                      Uma ferramenta criada para todos.
+                    </p>
+                    <p>
+                      Personalizável e pronta para se encaixar no "espaço" de cada um.<br/>
+                      Seja por identidade, por lore ou simplesmente pelas mais diversas brincadeiras que acontecem nos milhares de universos que criamos dentro da Twitch.
+                    </p>
+                    <p>
+                      Se você chegou até aqui é porque de fato está buscando mais.<br/>
+                      Sendo assim, convidamos você a sair da zona de conforto.
+                    </p>
+                    <p>
+                      Esta é a versão beta do <span class="fw-bold">!indica</span>.
+                    </p>
+                    <p>
+                      Calma.
+                      Não, você não está entrando em mais uma plataforma que vai te obrigar a utilizar um comando e um layout específico que não tem nada a ver com o a identidade do seu canal.<br/>
+                      Não.<br/>
+                      Se era isso que você estava procurando… Bem, volte duas quadras!
+                    </p>
+                    <p>
+                      <span class="fw-bold">!indica</span> é uma ferramenta (open source) que oferece a você a liberdade de ter um overlay de indicação altamente personalizável.
+                    </p>
+                      Com ela, você pode personalizar o seu comando, a frase de exibição no chat, a forma geométrica do overlay, alterar cores e fontes de texto.<br/>
+                      E se desejar, até mesmo programar suas próprias animações.
+                    </p>
+                    <img class="indica-logo" src="assets/img/INDICA-LOGO.png" alt="Logo indica" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </article>
       <article class="w-100 bg-dark">
-        <section id="about" class="container">
+        <!--<section id="about" class="container">
           <div class="row">
             <div class="col">
               <h2 class="text-uppercase fs-4 fw-bold pb-3">SEU CANAL, SUA IDENTIDADE.</h2>
@@ -96,8 +130,8 @@
               </p>
             </div>
           </div>
-        </section>
-        <section class="container">
+        </section>-->
+        <section id="howToUse" class="container">
           <div class="row">
             <div class="col">
               <h2 class="text-uppercase fs-4 fw-bold pb-3">OK, PARECE INTERESSANTE. COMO FAÇO PARA USAR?</h2>
@@ -120,7 +154,7 @@
             </div>
           </div>
         </section>
-        <section id="howToUse" class="container">
+        <section class="container">
           <div class="row">
             <div class="col">
               <h2 class="text-uppercase fs-4 fw-bold pb-3">AGORA QUE VOCÊ JÁ NOS CONHECE UM POUCO MAIS, QUE TAL EXPERIMENTARMOS?</h2>
@@ -241,7 +275,20 @@
               <p>
                 Vamos lá!
               </p>
-              <h2 class="text-uppercase fs-4 fw-bold pb-3">OVERLAY PARA STREAMELEMENTS</h2>
+              <p>
+                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoOverlay" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  Assista o tutorial para configurar o overlay no STREAMELEMENTS e adicionar a fonte de navegador no OBS.
+                </a>
+                <div class="collapse" id="videoOverlay">
+                  <div class="">
+                    <video class="ratio ratio-16x9" controls>
+                      <source src="assets/video/overlay_streamelements.webm" type="video/webm">
+                      Seu navegador não suporta este video HTML.
+                    </video>
+                  </div>
+                </div>
+              </p>
+              <h2 class="text-uppercase fs-4 fw-bold pt-4 pb-3">CÓDIGOS DO OVERLAY PARA STREAMELEMENTS</h2>
               <h4 class="text-uppercase fs-6 fw-bolder">HTML</h4>
               <div id="html" class="copy">
                 <div class="code">

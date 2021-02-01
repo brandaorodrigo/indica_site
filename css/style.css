@@ -5,6 +5,10 @@ body{
   scroll-behavior: smooth;
 }
 
+*:focus {
+  outline: none;
+}
+
 /*Header*/
 .navbar{
   background: #16181b;
@@ -67,23 +71,42 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
-  opacity: 0.5;
+  background: black;
+  opacity: 0.8;
   z-index: 1;
 }
 
 .header .overlay-text{
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.indica-logo{
+  max-width: 500px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: .05;
+}
+
+.header .overlay-text h1{
+  text-align: left;
+}
+
 .wrap{
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow:none;
 }
 
 /*Content Style*/
@@ -173,7 +196,7 @@ input:focus{
 }
 
 .btn-a{
-  color: #fff;
+  color: #ccee00;
   padding: .25rem .5rem;
   font-weight: 400;
   border: 0;
@@ -183,7 +206,8 @@ input:focus{
   text-align: left;
 }
 .btn-a:hover{
-  color: #fff;
+  color: #ddff00;
+  text-decoration: underline;
 }
 
 .btn-a::before{
@@ -247,13 +271,16 @@ footer{
   float: left;
 }
 .btn-news:hover{
-  background: #16181b;
+  background:#212529;
   color: #fff;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
   main article .container{
     padding: 1rem;
+  }
+  .header{
+    height: auto;
   }
 }
 
