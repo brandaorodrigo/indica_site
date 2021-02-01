@@ -67,7 +67,7 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background: black;
   opacity: 0.8;
   z-index: 1;
 }
@@ -79,6 +79,20 @@ body{
   vertical-align: middle;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header .overlay-text h1{
+  text-align: left;
+}
+
+.indica-logo{
+  max-width: 500px;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  opacity: .1;
 }
 
 .wrap{
@@ -251,9 +265,12 @@ footer{
   color: #fff;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
   main article .container{
     padding: 1rem;
+  }
+  .header{
+    height: auto;
   }
 }
 
