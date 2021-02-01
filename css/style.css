@@ -283,7 +283,7 @@ footer .copyright a{
 }
 
 .modal-dialog {
-  max-width: 220px !important;
+  max-width: 370px !important;
 }
 
 @media screen and (max-width: 991px){
