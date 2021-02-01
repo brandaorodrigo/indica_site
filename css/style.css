@@ -222,7 +222,7 @@ input:focus{
 }
 
 .collapse.show video {
-  box-shadow: 0 0 15px rgb(0 0 0 / 50%)
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
 }
 
 /*Footer*/
