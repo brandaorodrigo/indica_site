@@ -134,7 +134,7 @@ document.querySelectorAll('.nav-item a[href^="#"], .container a[href^="#"]').for
 });
 
 /*Typewriter Effect*/
-var TxtType = function(el, toRotate, period){
+/*var TxtType = function(el, toRotate, period){
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
@@ -186,4 +186,4 @@ window.onload = function(){
         new TxtType(elements[i], JSON.parse(toRotate), period);
       }
   }
-};
+};*/

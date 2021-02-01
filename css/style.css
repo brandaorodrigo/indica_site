@@ -68,14 +68,14 @@ body{
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: 1;
 }
 
 .header .overlay-text{
   position: relative;
   z-index: 2;
-  text-align: center;
+  text-align: justify;
   vertical-align: middle;
   top: 50%;
   transform: translateY(-50%);
@@ -247,7 +247,7 @@ footer{
   float: left;
 }
 .btn-news:hover{
-  background: #16181b;
+  background:#212529;
   color: #fff;
 }
 
