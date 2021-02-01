@@ -243,6 +243,7 @@ footer{
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .form-inline{
@@ -279,6 +280,10 @@ footer .copyright a{
   color: #fff;
   text-decoration: none;
   font-weight: 700;
+}
+
+.modal-dialog {
+  max-width: 220px !important;
 }
 
 @media screen and (max-width: 991px){
