@@ -1,8 +1,13 @@
 let bot = {
-  "streamelements": {
+  "streamelements_original": {
     "name": "${user ${1}}",
     "game": "${game ${1}}",
     "url": "https://twitch.tv/${user.name ${1}}"
+  },
+  "streamelements": {
+    "name": "${urlfetch https://xt.art.br/indica/api/${1}/bot/name}",
+    "game": "${urlfetch https://xt.art.br/indica/api/${1}/bot/game}",
+    "url": "https://twitch.tv/${urlfetch https://xt.art.br/indica/api/${1}/bot/user}"
   },
   "streamlabs_cloudbot": {
     "name": "{touser.name}",
@@ -51,6 +56,8 @@ document.querySelector("#phrase").addEventListener("keyup", function () {
   update()
 })
 
+update()
+
 /*Tooltip*/
 const clickToCopyEl= document.querySelectorAll(".copy .code");
 clickToCopyEl.forEach(e => {
@@ -98,7 +105,7 @@ document.querySelectorAll('.nav-item a[href^="#"], .container a[href^="#"]').for
     e.preventDefault();
     let hash = this.getAttribute('href');
     let checkIfVideo = hash.split("video");
-    
+
     /*Set Video Scrol Position*/
     if(checkIfVideo.length > 1){
       hash = checkIfVideo[0]+checkIfVideo[1].toLowerCase();
