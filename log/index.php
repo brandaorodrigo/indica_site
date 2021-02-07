@@ -44,7 +44,7 @@ $pdo = new PDO('mysql:host=' . $db_host .';dbname=' . $db_base, $db_user, $db_pa
     $qtd_indica = select("SELECT count(*) AS qtd FROM `indica`");
     $streamer_usando = select("SELECT * FROM (SELECT `caller` AS canal, count(*) AS qtd FROM `indica` GROUP BY `caller`) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
     $streamer_indicado = select("SELECT * FROM (SELECT channel AS canal, count(*) AS qtd FROM `indica` GROUP BY channel) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
-    $jogo_jogado = select("SELECT * FROM (SELECT game, count(*) AS qtd FROM `indica` GROUP BY game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
+    $jogo_jogado = select("SELECT * FROM (SELECT i.game, count(*) AS qtd FROM (SELECT DISTINCT channel, game FROM indica) AS i GROUP BY i.game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
     if (!$_SESSION['login']) : ?>
         <div style="margin:40px auto;display:block;width:300px;text-align:center;">
             <form method="post">
