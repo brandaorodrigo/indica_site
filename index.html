@@ -1,112 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="!indica é uma ferramenta totalmente customizável e de código aberto para você poder indicar seus amigos streamers.">
-    <meta property='og:title' content='!indica'/>
-    <meta property='og:image' content='https://xt.art.br/indica/favicon.png'/>
-    <meta property='og:description' content='!indica é uma ferramenta totalmente customizável e de código aberto para você poder indicar seus amigos streamers.'/>
+    <meta name="Description"
+        content="!indica é uma ferramenta totalmente customizável e de código aberto para você poder indicar seus amigos streamers.">
+    <meta property='og:title' content='!indica' />
+    <meta property='og:image' content='https://xt.art.br/indica/favicon.png' />
+    <meta property='og:description'
+        content='!indica é uma ferramenta totalmente customizável e de código aberto para você poder indicar seus amigos streamers.' />
     <title>Indica</title>
-    <link rel="icon" href="assets/img/favicon.png" sizes="16x16" type="image/x-icon"/>
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16" type="image/x-icon" />
     <!--Bootstrap 5.0-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&family=Ubuntu:wght@300;400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;700&family=Ubuntu:wght@300;400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <!--Custom Style-->
     <link href="css/style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-103573850-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-103573850-1');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-103573850-1');
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <div class="logo d-inline-block">!i</div>
-            !indica
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about">SOBRE</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#howToUse">COMO USAR?</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://discord.gg/a354PqvNWn" target="_blank" rel="noopener">DISCORD</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://github.com/brandaorodrigo/indica" target="_blank" rel="noopener">GITHUB</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <nav>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <div class="logo d-inline-block">!i</div>
+                    !indica
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#howToUse">COMO USAR?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.gg/a354PqvNWn" target="_blank"
+                                rel="noopener">DISCORD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/brandaorodrigo/indica" target="_blank"
+                                rel="noopener">GITHUB</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
     </header>
     <main>
-      <article id="about" class="container-fluid bg-dark">
-        <section class="row">
-          <div class="col header">
-            <div class="overlay"></div>
-            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-              <source src="assets/video/VIDEOBG.webm" type="video/webm">
-            </video>
-            <div class="overlay-text">
-              <!--<h1 class="typewrite text-uppercase" data-period="2000" data-type='[ "100% CUSTOMIZÁVEL.", "CÓDIGO ABERTO.", "NÃO PRECISA DE CADASTRO.", "NÃO PRECISA DE NOSSO BOT, USE O SEU." ]'></h1>-->
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <h1 class="text-uppercase fs-4 fw-bold pb-3">SEU CANAL, SUA IDENTIDADE.</h1>
-                    <p>
-                      Uma ferramenta criada para todos.
-                    </p>
-                    <p>
-                      Personalizável e pronta para se encaixar no "espaço" de cada um.<br/>
-                      Seja por identidade, por lore ou simplesmente pelas mais diversas brincadeiras que acontecem nos milhares de universos que criamos dentro da Twitch.
-                    </p>
-                    <p>
-                      Se você chegou até aqui é porque de fato está buscando mais.<br/>
-                      Sendo assim, convidamos você a sair da zona de conforto.
-                    </p>
-                    <p>
-                      Esta é a versão beta do <span class="fw-bold">!indica</span>.
-                    </p>
-                    <p>
-                      Calma.
-                      Não, você não está entrando em mais uma plataforma que vai te obrigar a utilizar um comando e um layout específico que não tem nada a ver com o a identidade do seu canal.<br/>
-                      Não.<br/>
-                      Se era isso que você estava procurando… Bem, volte duas quadras!
-                    </p>
-                    <p>
-                      <span class="fw-bold">!indica</span> é uma ferramenta (open source) que oferece a você a liberdade de ter um overlay de indicação altamente personalizável.
-                    </p>
-                      Com ela, você pode personalizar o seu comando, a frase de exibição no chat, a forma geométrica do overlay, alterar cores e fontes de texto.<br/>
-                      E se desejar, até mesmo programar suas próprias animações.
-                    </p>
-                    <img class="indica-logo" src="assets/img/INDICA-LOGO.png" alt="Logo indica" />
-                  </div>
+        <article id="about" class="container-fluid bg-dark">
+            <section class="row">
+                <div class="col header">
+                    <div class="overlay"></div>
+                    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                        <source src="assets/video/VIDEOBG.webm" type="video/webm">
+                    </video>
+                    <div class="overlay-text">
+                        <!--<h1 class="typewrite text-uppercase" data-period="2000" data-type='[ "100% CUSTOMIZÁVEL.", "CÓDIGO ABERTO.", "NÃO PRECISA DE CADASTRO.", "NÃO PRECISA DE NOSSO BOT, USE O SEU." ]'></h1>-->
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1 class="text-uppercase fs-4 fw-bold pb-3">SEU CANAL, SUA IDENTIDADE.</h1>
+                                    <p>
+                                        Uma ferramenta criada para todos.
+                                    </p>
+                                    <p>
+                                        Personalizável e pronta para se encaixar no "espaço" de cada um.<br />
+                                        Seja por identidade, por lore ou simplesmente pelas mais diversas brincadeiras
+                                        que acontecem nos milhares de universos que criamos dentro da Twitch.
+                                    </p>
+                                    <p>
+                                        Se você chegou até aqui é porque de fato está buscando mais.<br />
+                                        Sendo assim, convidamos você a sair da zona de conforto.
+                                    </p>
+                                    <p>
+                                        Esta é a versão beta do <span class="fw-bold">!indica</span>.
+                                    </p>
+                                    <p>
+                                        Calma.
+                                        Não, você não está entrando em mais uma plataforma que vai te obrigar a utilizar
+                                        um comando e um layout específico que não tem nada a ver com o a identidade do
+                                        seu canal.<br />
+                                        Não.<br />
+                                        Se era isso que você estava procurando… Bem, volte duas quadras!
+                                    </p>
+                                    <p>
+                                        <span class="fw-bold">!indica</span> é uma ferramenta (open source) que oferece
+                                        a você a liberdade de ter um overlay de indicação altamente personalizável.
+                                    </p>
+                                    Com ela, você pode personalizar o seu comando, a frase de exibição no chat, a forma
+                                    geométrica do overlay, alterar cores e fontes de texto.<br />
+                                    E se desejar, até mesmo programar suas próprias animações.
+                                    </p>
+                                    <img class="indica-logo" src="assets/img/INDICA-LOGO.png" alt="Logo indica" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-      <article class="w-100 bg-dark">
-        <!--<section id="about" class="container">
+            </section>
+        </article>
+        <article class="w-100 bg-dark">
+            <!--<section id="about" class="container">
           <div class="row">
             <div class="col">
               <h2 class="text-uppercase fs-4 fw-bold pb-3">SEU CANAL, SUA IDENTIDADE.</h2>
@@ -139,380 +154,413 @@
             </div>
           </div>
         </section>-->
-        <section id="howToUse" class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-uppercase fs-4 fw-bold pb-3">OK, PARECE INTERESSANTE. COMO FAÇO PARA USAR?</h2>
-              <p>
-                Muito simples!<br/>
-                <s>Você só precisa se cadastrar em nossa plataforma e adicionar o nosso bot ao seu canal da Twitch.</s>
-              </p>
-              <p>
-                Vamos fazer mais com menos?<br/>
-                Nós como Streamers, sabemos que já existem muitas plataformas e serviços os quais inevitavelmente temos que fazer parte para que possamos ter recursos variados na stream.
-              </p>
-              <p>
-                Não vamos te “obrigar” a se cadastrar na nossa plataforma nem mesmo a adicionar mais um bot a sua conta da Twitch apenas para usar a nossa ferramenta.
-              </p>
-              <p>
-                Desenvolvemos a ferramenta para trabalhar para você, não para nós.<br/>
-                Você provavelmente já utilizou algum bot no seu canal para gerar interação através de comandos e recursos.<br/>
-                Nossa aplicação está preparada para trabalhar com ele, seja ele Nightbot, Streamlabs, StreamElements ou outro bot.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-uppercase fs-4 fw-bold pb-3">AGORA QUE VOCÊ JÁ NOS CONHECE UM POUCO MAIS, QUE TAL EXPERIMENTARMOS?</h2>
-              <p>
-                Vamos lá!<br/>
-                Para começar, escolha a frase que será exibida no seu chat quando você divulgar um streamer.
-              </p>
-              <p>
-                No campo abaixo, descreva a sua frase personalizada respeitando as variáveis. Ou se preferir, pode utilizar o exemplo já aplicado.
-              </p>
-              <h3 class="text-uppercase fs-5 fw-bolder">CONFIGURAÇÕES</h3>
-              <p>No campo abaixo, descreva a sua frase personalizada respeitando as variáveis &lt;name&gt;, &lt;game&gt;, &lt;url&gt;. Ou se preferir, pode utilizar o exemplo já aplicado.</p>
-              <label for="phrase" class="visually-hidden">Frase para o comando</label>
-              <input type="text" name="phrase" id="phrase" class="" value="/me Conheça <name> que estava jogando <game>. Acesse <url>">
-              <p class="pt-3">Depois de personalizar a sua frase no campo acima, o comando para o seu bot será gerado logo abaixo. Escolha e copie o comando de acordo com o bot que você utiliza em seu canal.</p>
-              <h3 class="text-uppercase fs-5 fw-bolder">COMANDOS</h3>
-              <br/>
-              <h4 class="text-uppercase fs-6 fw-bolder">STREAMELEMENTS</h4>
-              <div id="streamelements" class="copy">
-                <div class="code"></div>
-              </div>
-              <p>
-                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamelements" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Assista o tutorial para o STREAMELEMENTS
-                </a>
-                <div class="collapse" id="videoStreamelements">
-                  <div class="">
-                    <video class="ratio ratio-16x9" controls>
-                      <source src="assets/video/bot_streamelements.webm" type="video/webm">
-                      Seu navegador não suporta este video HTML.
-                    </video>
-                  </div>
+            <section id="howToUse" class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-uppercase fs-4 fw-bold pb-3">OK, PARECE INTERESSANTE. COMO FAÇO PARA USAR?</h2>
+                        <p>
+                            Muito simples!<br />
+                            <s>Você só precisa se cadastrar em nossa plataforma e adicionar o nosso bot ao seu canal da
+                                Twitch.</s>
+                        </p>
+                        <p>
+                            Vamos fazer mais com menos?<br />
+                            Nós como Streamers, sabemos que já existem muitas plataformas e serviços os quais
+                            inevitavelmente temos que fazer parte para que possamos ter recursos variados na stream.
+                        </p>
+                        <p>
+                            Não vamos te “obrigar” a se cadastrar na nossa plataforma nem mesmo a adicionar mais um bot
+                            a sua conta da Twitch apenas para usar a nossa ferramenta.
+                        </p>
+                        <p>
+                            Desenvolvemos a ferramenta para trabalhar para você, não para nós.<br />
+                            Você provavelmente já utilizou algum bot no seu canal para gerar interação através de
+                            comandos e recursos.<br />
+                            Nossa aplicação está preparada para trabalhar com ele, seja ele Nightbot, Streamlabs,
+                            StreamElements ou outro bot.
+                        </p>
+                    </div>
                 </div>
-              </p>
-              <h4 class="text-uppercase fs-6 fw-bolder">STREAMLABS | CLOUDBOT</h4>
-              <div id="streamlabs_cloudbot" class="copy">
-                <div class="code"></div>
-              </div>
-              <p>
-                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamlabs_cloudbot" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Assista o tutorial para o STREAMLABS | CLOUDBOT
-                </a>
-                <div class="collapse" id="videoStreamlabs_cloudbot">
-                  <div class="">
-                    <video class="ratio ratio-16x9" controls>
-                      <source src="assets/video/bot_streamlabs-cloudbot.webm" type="video/webm">
-                      Seu navegador não suporta este video HTML.
-                    </video>
-                  </div>
+            </section>
+            <section class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-uppercase fs-4 fw-bold pb-3">AGORA QUE VOCÊ JÁ NOS CONHECE UM POUCO MAIS, QUE
+                            TAL EXPERIMENTARMOS?</h2>
+                        <p>
+                            Vamos lá!<br />
+                            Para começar, escolha a frase que será exibida no seu chat quando você divulgar um streamer.
+                        </p>
+                        <p>
+                            No campo abaixo, descreva a sua frase personalizada respeitando as variáveis. Ou se
+                            preferir, pode utilizar o exemplo já aplicado.
+                        </p>
+                        <h3 class="text-uppercase fs-5 fw-bolder">CONFIGURAÇÕES</h3>
+                        <p>No campo abaixo, descreva a sua frase personalizada respeitando as variáveis &lt;name&gt;,
+                            &lt;game&gt;, &lt;url&gt;. Ou se preferir, pode utilizar o exemplo já aplicado.</p>
+                        <label for="phrase" class="visually-hidden">Frase para o comando</label>
+                        <input type="text" name="phrase" id="phrase" class=""
+                            value="/me Conheça <name> que estava jogando <game>. Acesse <url>">
+                        <p class="pt-3">Depois de personalizar a sua frase no campo acima, o comando para o seu bot será
+                            gerado logo abaixo. Escolha e copie o comando de acordo com o bot que você utiliza em seu
+                            canal.</p>
+                        <h3 class="text-uppercase fs-5 fw-bolder">COMANDOS</h3>
+                        <br />
+                        <h4 class="text-uppercase fs-6 fw-bolder">STREAMELEMENTS</h4>
+                        <div id="streamelements" class="copy">
+                            <div class="code"></div>
+                        </div>
+                        <p>
+                            <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamelements" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Assista o tutorial para o STREAMELEMENTS
+                            </a>
+                        <div class="collapse" id="videoStreamelements">
+                            <div class="">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="assets/video/bot_streamelements.webm" type="video/webm">
+                                    Seu navegador não suporta este video HTML.
+                                </video>
+                            </div>
+                        </div>
+                        </p>
+                        <h4 class="text-uppercase fs-6 fw-bolder">STREAMLABS | CLOUDBOT</h4>
+                        <div id="streamlabs_cloudbot" class="copy">
+                            <div class="code"></div>
+                        </div>
+                        <p>
+                            <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamlabs_cloudbot"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Assista o tutorial para o STREAMLABS | CLOUDBOT
+                            </a>
+                        <div class="collapse" id="videoStreamlabs_cloudbot">
+                            <div class="">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="assets/video/bot_streamlabs-cloudbot.webm" type="video/webm">
+                                    Seu navegador não suporta este video HTML.
+                                </video>
+                            </div>
+                        </div>
+                        </p>
+                        <h4 class="text-uppercase fs-6 fw-bolder">STREAMLABS | CHATBOT</h4>
+                        <div id="streamlabs_chatbot" class="copy">
+                            <div class="code"></div>
+                        </div>
+                        <p>
+                            <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamlabs_chatbot" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Assista o tutorial para o STREAMLABS | CHATBOT
+                            </a>
+                        <div class="collapse" id="videoStreamlabs_chatbot">
+                            <div class="">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="assets/video/bot_streamlabs-chatbot.webm" type="video/webm">
+                                    Seu navegador não suporta este video HTML.
+                                </video>
+                            </div>
+                        </div>
+                        </p>
+                        <h4 class="text-uppercase fs-6 fw-bolder">NIGHTBOT</h4>
+                        <div id="nightbot" class="copy">
+                            <div class="code">
+                                /me Conheça $(twitch $(touser) "{{displayName}}") que estava jogando $(twitch $(touser)
+                                "{{game}}"). Acesse https://twitch.tv/$(twitch $(touser) "{{name}}")
+                            </div>
+                        </div>
+                        <p>
+                            <a class="btn btn-a" data-bs-toggle="collapse" href="#videoNightbot" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Assista o tutorial para o NIGHTBOT
+                            </a>
+                        <div class="collapse" id="videoNightbot">
+                            <div class="">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="assets/video/bot_nightbot.webm" type="video/webm">
+                                    Seu navegador não suporta este video HTML.
+                                </video>
+                            </div>
+                        </div>
+                        </p>
+                        <p>
+                            Após copiar o respectivo código, vá até a plataforma de controle do seu bot e adicione um
+                            comando customizado. Nesta etapa, você já pode definir o comando que irá ser utilizado para
+                            indicar um streamer no seu canal.
+                        <p>
+                        </p>
+                        Tudo bem, não tem problema se você ainda não pensou no comando que quer usar.<br />
+                        Você pode mudar isso a qualquer momento. Se este for seu caso, por padrão você pode utilizar o
+                        comando <span class="fw-bold fst-italic">!indica</span>.
+                        <p>
+                        </p>
+                        Não se esqueça de definir a permissão do comando para apenas moderadores e streamer.
+                        <p>
+                        </p>
+                        O que?<br />
+                        Não sabe como criar um comando no seu bot? Tudo bem, te ajudamos com isso.<br />
+                        Escolha o bot e aprenda agora mesmo a criar o comando.
+                        </p>
+                        <p>
+                            Ok. Agora que você já criou o comando no seu bot, vamos para a parte do overlay.
+                        </p>
+                        <p>
+                            Para configurar o overlay, vamos precisar acessar a plataforma StreamElements.<br />
+                            Fica tranquilo, você não precisa usar nenhum recurso da plataforma no seu canal.
+                        </p>
+                        <p>
+                            Você apenas irá configurar o layout do overlay nesta plataforma, e dela, irá utilizar apenas
+                            a url do widget.
+                        </p>
+                        <p>
+                            Vamos lá!
+                        </p>
+                        <p>
+                            <a class="btn btn-a" data-bs-toggle="collapse" href="#videoOverlay" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Assista o tutorial para configurar o overlay no STREAMELEMENTS e adicionar a fonte de
+                                navegador no OBS.
+                            </a>
+                        <div class="collapse" id="videoOverlay">
+                            <div class="">
+                                <video class="ratio ratio-16x9" controls>
+                                    <source src="assets/video/overlay_streamelements.webm" type="video/webm">
+                                    Seu navegador não suporta este video HTML.
+                                </video>
+                            </div>
+                        </div>
+                        </p>
+                        <h2 class="text-uppercase fs-4 fw-bold pt-4 pb-3">CÓDIGOS DO OVERLAY PARA STREAMELEMENTS</h2>
+                        <h4 class="text-uppercase fs-6 fw-bolder">HTML</h4>
+                        <div id="html" class="copy">
+                            <div class="code">
+                                &lt;script src="https://xt.art.br/indica/overlay.js"&gt;&lt;/script&gt;
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase fs-6 fw-bolder">CSS</h4>
+                        <div id="css" class="">
+                            <div class="code">
+                                <div class="comment">(apagar tudo e deixar vazio)</div>
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase fs-6 fw-bolder">JS</h4>
+                        <div id="js" class="copy">
+                            <div class="code">
+                                <div class="comment">(apagar tudo e deixar vazio)</div>
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase fs-6 fw-bolder">FIELDS</h4>
+                        <div id="fields" class="copy">
+                            <div class="code">
+                                {
+                                "command": {
+                                "type": "text",
+                                "label": "Qual é seu comando personalizado?",
+                                "group": "Comando",
+                                "value": "!indica"
+                                },
+                                "border_radius": {
+                                "type": "dropdown",
+                                "label": "Arredondamento",
+                                "group": "Geral",
+                                "value": "0",
+                                "options": {
+                                "0": "0%",
+                                "5": "5%",
+                                "10": "10%",
+                                "30": "30%",
+                                "50": "50%"
+                                }
+                                },
+                                "animation_time": {
+                                "type": "dropdown",
+                                "label": "Tempo da exibição",
+                                "group": "Geral",
+                                "value": "15",
+                                "options": {
+                                "10": "10 segundos",
+                                "15": "15 segundos",
+                                "20": "20 segundos"
+                                }
+                                },
+                                "font": {
+                                "type": "googleFont",
+                                "label": "Fonte",
+                                "group": "Geral",
+                                "value": "Roboto"
+                                },
+                                "shadow_color": {
+                                "type": "colorpicker",
+                                "label": "Sombra",
+                                "group": "Geral",
+                                "value": "#888888"
+                                },
+                                "border_color_line": {
+                                "type": "colorpicker",
+                                "label": "Cor da linha",
+                                "group": "Geral",
+                                "value": "#f4f4f4"
+                                },
+                                "border_color_name": {
+                                "type": "colorpicker",
+                                "label": "Cor da borda",
+                                "group": "Nome",
+                                "value": "#f4f4f4"
+                                },
+                                "font_color_name": {
+                                "type": "colorpicker",
+                                "label": "Cor da fonte",
+                                "group": "Nome",
+                                "value": "#f4f4f4"
+                                },
+                                "font_weight_name": {
+                                "type": "dropdown",
+                                "label": "Estilo da fonte",
+                                "group": "Nome",
+                                "value": "400",
+                                "options": {
+                                "400": "Normal",
+                                "700": "Negrito",
+                                "900": "Black"
+                                }
+                                },
+                                "font_style_name": {
+                                "type": "dropdown",
+                                "label": "Itálico",
+                                "group": "Nome",
+                                "value": "normal",
+                                "options": {
+                                "normal": "Não",
+                                "italic": "Sim"
+                                }
+                                },
+                                "border_color_game": {
+                                "type": "colorpicker",
+                                "label": "Cor da borda",
+                                "group": "Jogo",
+                                "value": "#f4f4f4"
+                                },
+                                "font_color_game": {
+                                "type": "colorpicker",
+                                "label": "Cor da fonte",
+                                "group": "Jogo",
+                                "value": "#f4f4f4"
+                                },
+                                "font_weight_game": {
+                                "type": "dropdown",
+                                "label": "Estilo da fonte",
+                                "group": "Jogo",
+                                "value": "400",
+                                "options": {
+                                "400": "Normal",
+                                "700": "Negrito",
+                                "900": "Black"
+                                }
+                                },
+                                "font_style_game": {
+                                "type": "dropdown",
+                                "label": "Itálico",
+                                "group": "Jogo",
+                                "value": "normal",
+                                "options": {
+                                "normal": "Não",
+                                "italic": "Sim"
+                                }
+                                }
+                                }
+                            </div>
+                        </div>
+                        <h4 class="text-uppercase fs-6 fw-bolder">DATA</h4>
+                        <div id="data" class="">
+                            <div class="code">
+                                <div class="comment">(apagar tudo e deixar vazio)</div>
+                            </div>
+                        </div>
+                        <p>
+                            É isso!<br />
+                            Agora que você faz parte do “lado livre da força”, esperamos que você se divirta
+                            personalizando sua overlay e que ajude a comunidade indicando cada vez mais streamers.
+                        </p>
+                    </div>
                 </div>
-              </p>
-              <h4 class="text-uppercase fs-6 fw-bolder">STREAMLABS | CHATBOT</h4>
-              <div id="streamlabs_chatbot" class="copy">
-                <div class="code"></div>
-              </div>
-              <p>
-                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoStreamlabs_chatbot" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Assista o tutorial para o STREAMLABS | CHATBOT
-                </a>
-                <div class="collapse" id="videoStreamlabs_chatbot">
-                  <div class="">
-                    <video class="ratio ratio-16x9" controls>
-                      <source src="assets/video/bot_streamlabs-chatbot.webm" type="video/webm">
-                      Seu navegador não suporta este video HTML.
-                    </video>
-                  </div>
-                </div>
-              </p>
-              <h4 class="text-uppercase fs-6 fw-bolder">NIGHTBOT</h4>
-              <div id="nightbot" class="copy">
-                <div class="code">
-                  /me Conheça $(twitch $(touser) "{{displayName}}") que estava jogando $(twitch $(touser) "{{game}}"). Acesse https://twitch.tv/$(twitch $(touser) "{{name}}")
-                </div>
-              </div>
-              <p>
-                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoNightbot" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Assista o tutorial para o NIGHTBOT
-                </a>
-                <div class="collapse" id="videoNightbot">
-                  <div class="">
-                    <video class="ratio ratio-16x9" controls>
-                      <source src="assets/video/bot_nightbot.webm" type="video/webm">
-                      Seu navegador não suporta este video HTML.
-                    </video>
-                  </div>
-                </div>
-              </p>
-              <p>
-                Após copiar o respectivo código, vá até a plataforma de controle do seu bot e adicione um comando customizado. Nesta etapa, você já pode definir o comando que irá ser utilizado para indicar um streamer no seu canal.
-              <p>
-              </p>
-                Tudo bem, não tem problema se você ainda não pensou no comando que quer usar.<br/>
-                Você pode mudar isso a qualquer momento. Se este for seu caso, por padrão você pode utilizar o comando <span class="fw-bold fst-italic">!indica</span>.
-              <p>
-              </p>
-                Não se esqueça de definir a permissão do comando para apenas moderadores e streamer.
-              <p>
-              </p>
-                O que?<br/>
-                Não sabe como criar um comando no seu bot? Tudo bem, te ajudamos com isso.<br/>
-                Escolha o bot e aprenda agora mesmo a criar o comando.
-              </p>
-              <p>
-                Ok. Agora que você já criou o comando no seu bot, vamos para a parte do overlay.
-              </p>
-              <p>
-                Para configurar o overlay, vamos precisar acessar a plataforma StreamElements.<br/>
-                Fica tranquilo, você não precisa usar nenhum recurso da plataforma no seu canal.
-              </p>
-              <p>
-                Você apenas irá configurar o layout do overlay nesta plataforma, e dela, irá utilizar apenas a url do widget.
-              </p>
-              <p>
-                Vamos lá!
-              </p>
-              <p>
-                <a class="btn btn-a" data-bs-toggle="collapse" href="#videoOverlay" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Assista o tutorial para configurar o overlay no STREAMELEMENTS e adicionar a fonte de navegador no OBS.
-                </a>
-                <div class="collapse" id="videoOverlay">
-                  <div class="">
-                    <video class="ratio ratio-16x9" controls>
-                      <source src="assets/video/overlay_streamelements.webm" type="video/webm">
-                      Seu navegador não suporta este video HTML.
-                    </video>
-                  </div>
-                </div>
-              </p>
-              <h2 class="text-uppercase fs-4 fw-bold pt-4 pb-3">CÓDIGOS DO OVERLAY PARA STREAMELEMENTS</h2>
-              <h4 class="text-uppercase fs-6 fw-bolder">HTML</h4>
-              <div id="html" class="copy">
-                <div class="code">
-                  &lt;script src="https://xt.art.br/indica/overlay.js"&gt;&lt;/script&gt;
-                </div>
-              </div>
-              <h4 class="text-uppercase fs-6 fw-bolder">CSS</h4>
-              <div id="css" class="">
-                <div class="code">
-                  <div class="comment">(apagar tudo e deixar vazio)</div>
-                </div>
-              </div>
-              <h4 class="text-uppercase fs-6 fw-bolder">JS</h4>
-              <div id="js" class="copy">
-                <div class="code">
-                  <div class="comment">(apagar tudo e deixar vazio)</div>
-                </div>
-              </div>
-              <h4 class="text-uppercase fs-6 fw-bolder">FIELDS</h4>
-              <div id="fields" class="copy">
-                <div class="code">
-                  {
-                    "command": {
-                      "type": "text",
-                      "label": "Qual é seu comando personalizado?",
-                      "group": "Comando",
-                      "value": "!indica"
-                    },
-                    "border_radius": {
-                      "type": "dropdown",
-                      "label": "Arredondamento",
-                      "group": "Geral",
-                      "value": "0",
-                      "options": {
-                        "0": "0%",
-                        "5": "5%",
-                        "10": "10%",
-                        "30": "30%",
-                        "50": "50%"
-                      }
-                    },
-                    "animation_time": {
-                      "type": "dropdown",
-                      "label": "Tempo da exibição",
-                      "group": "Geral",
-                      "value": "15",
-                      "options": {
-                        "10": "10 segundos",
-                        "15": "15 segundos",
-                        "20": "20 segundos"
-                      }
-                    },
-                    "font": {
-                      "type": "googleFont",
-                      "label": "Fonte",
-                      "group": "Geral",
-                      "value": "Roboto"
-                    },
-                    "shadow_color": {
-                      "type": "colorpicker",
-                      "label": "Sombra",
-                      "group": "Geral",
-                      "value": "#888888"
-                    },
-                    "border_color_line": {
-                      "type": "colorpicker",
-                      "label": "Cor da linha",
-                      "group": "Geral",
-                      "value": "#f4f4f4"
-                    },
-                    "border_color_name": {
-                      "type": "colorpicker",
-                      "label": "Cor da borda",
-                      "group": "Nome",
-                      "value": "#f4f4f4"
-                    },
-                    "font_color_name": {
-                      "type": "colorpicker",
-                      "label": "Cor da fonte",
-                      "group": "Nome",
-                      "value": "#f4f4f4"
-                    },
-                    "font_weight_name": {
-                      "type": "dropdown",
-                      "label": "Estilo da fonte",
-                      "group": "Nome",
-                      "value": "400",
-                      "options": {
-                        "400": "Normal",
-                        "700": "Negrito",
-                        "900": "Black"
-                      }
-                    },
-                    "font_style_name": {
-                      "type": "dropdown",
-                      "label": "Itálico",
-                      "group": "Nome",
-                      "value": "normal",
-                      "options": {
-                        "normal": "Não",
-                        "italic": "Sim"
-                      }
-                    },
-                    "border_color_game": {
-                      "type": "colorpicker",
-                      "label": "Cor da borda",
-                      "group": "Jogo",
-                      "value": "#f4f4f4"
-                    },
-                    "font_color_game": {
-                      "type": "colorpicker",
-                      "label": "Cor da fonte",
-                      "group": "Jogo",
-                      "value": "#f4f4f4"
-                    },
-                    "font_weight_game": {
-                      "type": "dropdown",
-                      "label": "Estilo da fonte",
-                      "group": "Jogo",
-                      "value": "400",
-                      "options": {
-                        "400": "Normal",
-                        "700": "Negrito",
-                        "900": "Black"
-                      }
-                    },
-                    "font_style_game": {
-                      "type": "dropdown",
-                      "label": "Itálico",
-                      "group": "Jogo",
-                      "value": "normal",
-                      "options": {
-                          "normal": "Não",
-                          "italic": "Sim"
-                      }
-                    }
-                  }
-                </div>
-              </div>
-              <h4 class="text-uppercase fs-6 fw-bolder">DATA</h4>
-              <div id="data" class="">
-                <div class="code">
-                  <div class="comment">(apagar tudo e deixar vazio)</div>
-                </div>
-              </div>
-              <p>
-                É isso!<br/>
-                Agora que você faz parte do “lado livre da força”, esperamos que você se divirta personalizando sua overlay e que ajude a comunidade indicando cada vez mais streamers.
-              </p>
-            </div>
-          </div>
-        </section>
-      </article>
+            </section>
+        </article>
     </main>
     <footer class="text-center pt-5 pb-3">
-      <article class="container">
-        <section class="row">
-          <div class="col-md-4 footer-cards text-start">
-            <p>
-              Hey, você é desenvolvedor? manja um pouco de programação? Quer personalizar ainda mais a overlay ou desenvolver alguma nova funcionalidade.<br/>
-              Tranquilo!<br/>
-              É só acessar o git, clonar o código e começar a brincar!<br/>
-            </p>
-            <a href="https://github.com/brandaorodrigo/indica" target="_blank" rel="noopener">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NS45NjgsNS4zMjlDMTE0LjYyNCw1LjMyOSwwLDEyMC40MDEsMCwyNjIuMzUzYzAsMTEzLjUzNiw3My4zNDQsMjA5Ljg1NiwxNzUuMTA0LDI0My44NzIgICAgYzEyLjgsMi4zNjgsMTcuNDcyLTUuNTY4LDE3LjQ3Mi0xMi4zODRjMC02LjExMi0wLjIyNC0yMi4yNzItMC4zNTItNDMuNzEyYy03MS4yLDE1LjUyLTg2LjI0LTM0LjQ2NC04Ni4yNC0zNC40NjQgICAgYy0xMS42MTYtMjkuNjk2LTI4LjQxNi0zNy42LTI4LjQxNi0zNy42Yy0yMy4yNjQtMTUuOTM2LDEuNzI4LTE1LjYxNiwxLjcyOC0xNS42MTZjMjUuNjk2LDEuODI0LDM5LjIsMjYuNDk2LDM5LjIsMjYuNDk2ICAgIGMyMi44NDgsMzkuMjY0LDU5LjkzNiwyNy45MzYsNzQuNTI4LDIxLjM0NGMyLjMwNC0xNi42MDgsOC45MjgtMjcuOTM2LDE2LjI1Ni0zNC4zNjggICAgYy01Ni44MzItNi40OTYtMTE2LjYwOC0yOC41NDQtMTE2LjYwOC0xMjcuMDA4YzAtMjguMDY0LDkuOTg0LTUxLjAwOCwyNi4zNjgtNjguOTkyYy0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQsMi40OTYtNjggICAgYzAsMCwyMS41MDQtNi45MTIsNzAuNCwyNi4zMzZjMjAuNDE2LTUuNjk2LDQyLjMwNC04LjU0NCw2NC4wOTYtOC42NGMyMS43MjgsMC4xMjgsNDMuNjQ4LDIuOTQ0LDY0LjA5Niw4LjY3MiAgICBjNDguODY0LTMzLjI0OCw3MC4zMzYtMjYuMzM2LDcwLjMzNi0yNi4zMzZjMTMuOTUyLDM1LjM5Miw1LjE4NCw2MS41MDQsMi41Niw2OGMxNi40MTYsMTcuOTg0LDI2LjMwNCw0MC45MjgsMjYuMzA0LDY4Ljk5MiAgICBjMCw5OC43Mi01OS44NCwxMjAuNDQ4LTExNi44NjQsMTI2LjgxNmM5LjE4NCw3LjkzNiwxNy4zNzYsMjMuNjE2LDE3LjM3Niw0Ny41ODRjMCwzNC4zNjgtMC4zMiw2Mi4wOC0wLjMyLDcwLjQ5NiAgICBjMCw2Ljg4LDQuNjA4LDE0Ljg4LDE3LjYsMTIuMzUyQzQzOC43Miw0NzIuMTQ1LDUxMiwzNzUuODU3LDUxMiwyNjIuMzUzQzUxMiwxMjAuNDAxLDM5Ny4zNzYsNS4zMjksMjU1Ljk2OCw1LjMyOXoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" alt="logo github" /> github
-            </a>
-          </div>
-          <div class="col-md-4 footer-cards text-start">
-            <p>
-              Você curtiu?<br/>
-              Faça um PIX e apoie o !indica e ajude a manter o desenvolvimento do projeto.
-            </p>
-            <a data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi4wMDEgNTEyLjAwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDAyLjE3OCwyOC45ODlDMzg1LjU0NCwxMC4yOTUsMzYyLjQ4NywwLDMzNy4yNTMsMGMtMjguMTY2LDAtNTIuNTgxLDEzLjMxOC03MC42MDYsMzguNTEzICAgIGMtMS4zNTIsMS44ODktMi42MTYsMy43NzgtMy44MDEsNS42NDhjLTEuMTg0LTEuODcxLTIuNDQ4LTMuNzU5LTMuOC01LjY0OEMyNDEuMDIsMTMuMzE4LDIxNi42MDUsMCwxODguNDM5LDAgICAgYy0yNS4yMzQsMC00OC4yOTIsMTAuMjk1LTY0LjkyNSwyOC45ODhjLTE1Ljc4NCwxNy43NC0yNC40NzgsNDEuNDU2LTI0LjQ3OCw2Ni43NzljMCwyNy41MTksMTAuNjc5LDUyLjkxMiwzMy42MDQsNzkuOTE2ICAgIGMyMC4wMDMsMjMuNTYsNDguNjk1LDQ3Ljc3Nyw4MS45MTksNzUuODE5YzEyLjI3NywxMC4zNjMsMjQuOTczLDIxLjA3OCwzOC40NjQsMzIuNzcxYzIuODE4LDIuNDQyLDYuMzIsMy42NjQsOS44MjIsMy42NjQgICAgYzMuNTAxLDAsNy4wMDMtMS4yMjIsOS44MjItMy42NjRjMTMuNDg5LTExLjY5LDI2LjE4My0yMi40MDUsMzguNDYtMzIuNzY2YzIxLjMzNy0xOC4wMSwzOS43NjQtMzMuNTYzLDU1Ljc1NS00OC42NDkgICAgYzMxLjA0Ni0yOS4yOTIsNTkuNzc0LTYyLjUzOSw1OS43NzQtMTA3LjA5QzQyNi42NTYsNzAuNDQ0LDQxNy45NjMsNDYuNzI5LDQwMi4xNzgsMjguOTg5eiBNMzQ2LjI5OSwxODEuMDQxICAgIGMtMTUuMzg2LDE0LjUxNy0zMy41MiwyOS44MjItNTQuNTE3LDQ3LjU0NGMtOS4zNDEsNy44ODMtMTguOTIxLDE1Ljk2OS0yOC45MzYsMjQuNTU3Yy0xMC4wMTctOC41ODctMTkuNi0xNi42NzUtMjguOTQxLTI0LjU2ICAgIGMtNjUuMzk5LTU1LjE5OS0xMDQuODc1LTg4LjUxNy0xMDQuODc1LTEzMi44MTRjLTAuMDAyLTM3LjQ5NywyNS41MzgtNjUuNzczLDU5LjQwOC02NS43NzNjMTguMDk1LDAsMzMuNDg0LDguNTE4LDQ1LjczOSwyNS4zMTcgICAgYzEwLjA1OCwxMy43ODYsMTQuMTg3LDI4LjA3OCwxNC4yMTUsMjguMTc0YzEuOCw2LjQ5Nyw3LjcxMiwxMC45OTUsMTQuNDUzLDEwLjk5NXMxMi42NTMtNC40OTgsMTQuNDUzLTEwLjk5NSAgICBjMC4xNDgtMC41MzUsMTUuMzMtNTMuNDkxLDU5Ljk1NS01My40OTFjMzMuODY5LDAsNTkuNDEsMjguMjc3LDU5LjQxLDY1Ljc3M0MzOTYuNjYzLDEyMi45MzcsMzgyLjU0MiwxNDYuODQ1LDM0Ni4yOTksMTgxLjA0MXoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2Ni45NTQsMzAyLjA0N2MtMTIuNDQxLDAtMjQuNDQyLDUuMjIzLTMyLjkyNSwxNC4zMjlsLTQ0LjA3Nyw0Ny4zMThjLTUuNjk3LTE4LjMxNi0yMi44MDUtMzEuNjUzLTQyLjk3MS0zMS42NTNoLTY5LjI4ICAgIGMtOS42OTksMC0xOS4wNTItMy41MjktMjYuMzM0LTkuOTM3Yy0zOS4xNjMtMzQuNDY0LTk4LjAyOS0zNC43NjctMTM3LjU2NC0wLjk1M2MtOC4xNTMtMTEuNTQzLTIxLjU4Ny0xOS4xMDMtMzYuNzYzLTE5LjEwMyAgICBIMTUuMDU0Yy04LjI4MiwwLTE0Ljk5Nyw2LjcxNC0xNC45OTcsMTQuOTk3djE3OS45NmMwLDguMjgyLDYuNzE0LDE0Ljk5NywxNC45OTcsMTQuOTk3SDc3LjA0ICAgIGMxMy40NjgsMCwyNS41NjQtNS45NTcsMzMuODE2LTE1LjM2NWw4Ljg4MSwyLjQ5NmMzMC4zNzgsOC41MzksNjEuNzgsMTIuODY4LDkzLjMzNSwxMi44NjhIMzQ2Ljk4ICAgIGMzMi44NjYsMCw2NC4yNjEtMTUuNjk4LDgzLjk4MS00MS45OTFsNzEuOTk5LTk1Ljk5N2MwLjAwMS0wLjAwMiwwLjAwMi0wLjAwNCwwLjAwNC0wLjAwNmM1Ljg3NS03LjgzNCw4Ljk4LTE3LjE2LDguOTgtMjYuOTcxICAgIEM1MTEuOTQ0LDMyMi4yMjksNDkxLjc2MSwzMDIuMDQ3LDQ2Ni45NTQsMzAyLjA0N3ogTTkyLjAzNyw0NjcuMDFjMCw4LjI2OS02LjcyNywxNC45OTctMTQuOTk3LDE0Ljk5N2gtNDYuOTlWMzMyLjA0aDQ2Ljk5ICAgIGM4LjI2OSwwLDE0Ljk5Nyw2LjcyNywxNC45OTcsMTQuOTk3VjQ2Ny4wMXogTTQ3OC45NjcsMzU2LjAxNGMwLDAuMDAxLTAuMDAxLDAuMDAxLTAuMDAyLDAuMDAybC03MS45OTgsOTUuOTk5ICAgIGMtMTQuMDg2LDE4Ljc4MS0zNi41MTEsMjkuOTkzLTU5Ljk4NywyOS45OTNIMjEzLjA3NWMtMjguODExLDAtNTcuNDgzLTMuOTUzLTg1LjIxOS0xMS43NDlsLTUuODY1LTEuNjQ5ICAgIGMwLjAxOS0wLjUzMiwwLjA0MS0xLjA2MywwLjA0MS0xLjU5OVYzNTMuODE2bDEwLjQ1MS05LjE5N2MyOC4yNC0yNC44NSw3MC44MzEtMjQuODUyLDk5LjA3MywwICAgIGMxMi43NjEsMTEuMjI5LDI5LjE0OCwxNy40MTMsNDYuMTQ3LDE3LjQxM2g2OS4yOGM4LjI2OSwwLDE0Ljk5Nyw2LjcyOCwxNC45OTcsMTQuOTk3YzAsOC4yNjktNi43MjcsMTQuOTk3LTE0Ljk5NywxNC45OTcgICAgSDI0MC4zOThjLTguMjgyLDAtMTQuOTk3LDYuNzE0LTE0Ljk5NywxNC45OTdzNi43MTQsMTQuOTk3LDE0Ljk5NywxNC45OTdoMTE2LjYzNGMxMi40NDEsMCwyNC40NC01LjIyMSwzMi45MjEtMTQuMzI1ICAgIGw2Ni4wMjMtNzAuODc2YzIuODcxLTMuMDgyLDYuNzctNC43NzksMTAuOTc4LTQuNzc5YzguMjY5LDAsMTQuOTk3LDYuNzI3LDE0Ljk5NywxNC45OTcgICAgQzQ4MS45NTEsMzUwLjMwNyw0ODAuOTE5LDM1My40MTEsNDc4Ljk2NywzNTYuMDE0eiIgZmlsbD0iIzg4ODg4OCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" alt="Icone mão com coração" /> Apoie
-            </a>
-          </div>
-          <div class="col-md-4 footer-cards text-start">
-            <p>
-              Quer ficar por dentro de todos os updates e novidades em primeira mão?<br/>
-              Então acesse nosso servidor do Discord e não perca nada.
-            </p>
-            <a href="https://discord.com/invite/a354PqvNWn" target="_blank" rel="noopener">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zLjU4IDIxLjE5NmgxNC4yNTlsLS42ODEtMi4yMDUgMS42MjkgMS4zOTggMS40OTMgMS4zMzggMi43MiAyLjI3M3YtMjEuNTI1Yy0uMDY4LTEuMzM4LTEuMjItMi40NzUtMi42NDgtMi40NzVsLTE2Ljc2Ny4wMDNjLTEuNDI3IDAtMi41ODUgMS4xMzktMi41ODUgMi40Nzd2MTYuMjRjMCAxLjQxMSAxLjE1NiAyLjQ3NiAyLjU4IDIuNDc2em0xMC41NDgtMTUuNTEzLS4wMzMuMDEyLjAxMi0uMDEyem0tNy42MzEgMS4yNjljMS44MzMtMS4zMzQgMy41MzItMS4yNyAzLjUzMi0xLjI3bC4xMzcuMTM1Yy0yLjI0My41MzUtMy4yNiAxLjUzNy0zLjI2IDEuNTM3cy4yNzItLjEzMy43NDctLjMzNmMzLjAyMS0xLjE4OCA2LjMyLTEuMTAyIDkuMzc0LjQwMiAwIDAtMS4wMTktLjkzNy0zLjEyNC0xLjUzN2wuMTg2LS4xODNjLjI5MS4wMDEgMS44MzEuMDU1IDMuNDc5IDEuMjYgMCAwIDEuODQ0IDMuMTUgMS44NDQgNy4wMi0uMDYxLS4wNzQtMS4xNDQgMS42NjYtMy45MzEgMS43MjYgMCAwLS40NzItLjUzNC0uODA4LTEgMS42My0uNDY4IDIuMjQtMS40MDQgMi4yNC0xLjQwNC0uNTM1LjMzNy0xLjAyMy41MzctMS40MTkuNzM3LS42MDkuMjY4LTEuMjE5LjQtMS44MjguNTM1LTIuODg0LjQ2OC00LjUwMy0uMzE1LTYuMDMzLS45MzZsLS41MjMtLjI2NnMuNjA5LjkzNiAyLjE3NCAxLjQwNGMtLjQxMS40NjktLjgxOCAxLjAwMi0uODE4IDEuMDAyLTIuNzg2LS4wNjYtMy44MDItMS44MDYtMy44MDItMS44MDYgMC0zLjg3NiAxLjgzMy03LjAyIDEuODMzLTcuMDJ6IiBmaWxsPSIjODg4ODg4IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTQuMzA4IDEyLjc3MWMuNzExIDAgMS4yOS0uNiAxLjI5LTEuMzQgMC0uNzM1LS41NzYtMS4zMzUtMS4yOS0xLjMzNXYuMDAzYy0uNzA4IDAtMS4yODguNTk4LTEuMjkgMS4zMzggMCAuNzM0LjU3OSAxLjMzNCAxLjI5IDEuMzM0eiIgZmlsbD0iIzg4ODg4OCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTkuNjkgMTIuNzcxYy43MTEgMCAxLjI5LS42IDEuMjktMS4zNCAwLS43MzUtLjU3NS0xLjMzNS0xLjI4Ni0xLjMzNWwtLjAwNC4wMDNjLS43MTEgMC0xLjI5LjU5OC0xLjI5IDEuMzM4IDAgLjczNC41NzkgMS4zMzQgMS4yOSAxLjMzNHoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+" alt="Logo Discord" /> Discord
-            </a>
-            <!--<form>
+        <article class="container">
+            <section class="row">
+                <div class="col-md-4 footer-cards text-start">
+                    <p>
+                        Hey, você é desenvolvedor? manja um pouco de programação? Quer personalizar ainda mais a overlay
+                        ou desenvolver alguma nova funcionalidade.<br />
+                        Tranquilo!<br />
+                        É só acessar o git, clonar o código e começar a brincar!<br />
+                    </p>
+                    <a href="https://github.com/brandaorodrigo/indica" target="_blank" rel="noopener">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTI1NS45NjgsNS4zMjlDMTE0LjYyNCw1LjMyOSwwLDEyMC40MDEsMCwyNjIuMzUzYzAsMTEzLjUzNiw3My4zNDQsMjA5Ljg1NiwxNzUuMTA0LDI0My44NzIgICAgYzEyLjgsMi4zNjgsMTcuNDcyLTUuNTY4LDE3LjQ3Mi0xMi4zODRjMC02LjExMi0wLjIyNC0yMi4yNzItMC4zNTItNDMuNzEyYy03MS4yLDE1LjUyLTg2LjI0LTM0LjQ2NC04Ni4yNC0zNC40NjQgICAgYy0xMS42MTYtMjkuNjk2LTI4LjQxNi0zNy42LTI4LjQxNi0zNy42Yy0yMy4yNjQtMTUuOTM2LDEuNzI4LTE1LjYxNiwxLjcyOC0xNS42MTZjMjUuNjk2LDEuODI0LDM5LjIsMjYuNDk2LDM5LjIsMjYuNDk2ICAgIGMyMi44NDgsMzkuMjY0LDU5LjkzNiwyNy45MzYsNzQuNTI4LDIxLjM0NGMyLjMwNC0xNi42MDgsOC45MjgtMjcuOTM2LDE2LjI1Ni0zNC4zNjggICAgYy01Ni44MzItNi40OTYtMTE2LjYwOC0yOC41NDQtMTE2LjYwOC0xMjcuMDA4YzAtMjguMDY0LDkuOTg0LTUxLjAwOCwyNi4zNjgtNjguOTkyYy0yLjY1Ni02LjQ5Ni0xMS40MjQtMzIuNjQsMi40OTYtNjggICAgYzAsMCwyMS41MDQtNi45MTIsNzAuNCwyNi4zMzZjMjAuNDE2LTUuNjk2LDQyLjMwNC04LjU0NCw2NC4wOTYtOC42NGMyMS43MjgsMC4xMjgsNDMuNjQ4LDIuOTQ0LDY0LjA5Niw4LjY3MiAgICBjNDguODY0LTMzLjI0OCw3MC4zMzYtMjYuMzM2LDcwLjMzNi0yNi4zMzZjMTMuOTUyLDM1LjM5Miw1LjE4NCw2MS41MDQsMi41Niw2OGMxNi40MTYsMTcuOTg0LDI2LjMwNCw0MC45MjgsMjYuMzA0LDY4Ljk5MiAgICBjMCw5OC43Mi01OS44NCwxMjAuNDQ4LTExNi44NjQsMTI2LjgxNmM5LjE4NCw3LjkzNiwxNy4zNzYsMjMuNjE2LDE3LjM3Niw0Ny41ODRjMCwzNC4zNjgtMC4zMiw2Mi4wOC0wLjMyLDcwLjQ5NiAgICBjMCw2Ljg4LDQuNjA4LDE0Ljg4LDE3LjYsMTIuMzUyQzQzOC43Miw0NzIuMTQ1LDUxMiwzNzUuODU3LDUxMiwyNjIuMzUzQzUxMiwxMjAuNDAxLDM5Ny4zNzYsNS4zMjksMjU1Ljk2OCw1LjMyOXoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
+                            alt="logo github" /> github
+                    </a>
+                </div>
+                <div class="col-md-4 footer-cards text-start">
+                    <p>
+                        Você curtiu?<br />
+                        Faça um PIX e apoie o !indica e ajude a manter o desenvolvimento do projeto.
+                    </p>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMi4wMDEgNTEyLjAwMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNNDAyLjE3OCwyOC45ODlDMzg1LjU0NCwxMC4yOTUsMzYyLjQ4NywwLDMzNy4yNTMsMGMtMjguMTY2LDAtNTIuNTgxLDEzLjMxOC03MC42MDYsMzguNTEzICAgIGMtMS4zNTIsMS44ODktMi42MTYsMy43NzgtMy44MDEsNS42NDhjLTEuMTg0LTEuODcxLTIuNDQ4LTMuNzU5LTMuOC01LjY0OEMyNDEuMDIsMTMuMzE4LDIxNi42MDUsMCwxODguNDM5LDAgICAgYy0yNS4yMzQsMC00OC4yOTIsMTAuMjk1LTY0LjkyNSwyOC45ODhjLTE1Ljc4NCwxNy43NC0yNC40NzgsNDEuNDU2LTI0LjQ3OCw2Ni43NzljMCwyNy41MTksMTAuNjc5LDUyLjkxMiwzMy42MDQsNzkuOTE2ICAgIGMyMC4wMDMsMjMuNTYsNDguNjk1LDQ3Ljc3Nyw4MS45MTksNzUuODE5YzEyLjI3NywxMC4zNjMsMjQuOTczLDIxLjA3OCwzOC40NjQsMzIuNzcxYzIuODE4LDIuNDQyLDYuMzIsMy42NjQsOS44MjIsMy42NjQgICAgYzMuNTAxLDAsNy4wMDMtMS4yMjIsOS44MjItMy42NjRjMTMuNDg5LTExLjY5LDI2LjE4My0yMi40MDUsMzguNDYtMzIuNzY2YzIxLjMzNy0xOC4wMSwzOS43NjQtMzMuNTYzLDU1Ljc1NS00OC42NDkgICAgYzMxLjA0Ni0yOS4yOTIsNTkuNzc0LTYyLjUzOSw1OS43NzQtMTA3LjA5QzQyNi42NTYsNzAuNDQ0LDQxNy45NjMsNDYuNzI5LDQwMi4xNzgsMjguOTg5eiBNMzQ2LjI5OSwxODEuMDQxICAgIGMtMTUuMzg2LDE0LjUxNy0zMy41MiwyOS44MjItNTQuNTE3LDQ3LjU0NGMtOS4zNDEsNy44ODMtMTguOTIxLDE1Ljk2OS0yOC45MzYsMjQuNTU3Yy0xMC4wMTctOC41ODctMTkuNi0xNi42NzUtMjguOTQxLTI0LjU2ICAgIGMtNjUuMzk5LTU1LjE5OS0xMDQuODc1LTg4LjUxNy0xMDQuODc1LTEzMi44MTRjLTAuMDAyLTM3LjQ5NywyNS41MzgtNjUuNzczLDU5LjQwOC02NS43NzNjMTguMDk1LDAsMzMuNDg0LDguNTE4LDQ1LjczOSwyNS4zMTcgICAgYzEwLjA1OCwxMy43ODYsMTQuMTg3LDI4LjA3OCwxNC4yMTUsMjguMTc0YzEuOCw2LjQ5Nyw3LjcxMiwxMC45OTUsMTQuNDUzLDEwLjk5NXMxMi42NTMtNC40OTgsMTQuNDUzLTEwLjk5NSAgICBjMC4xNDgtMC41MzUsMTUuMzMtNTMuNDkxLDU5Ljk1NS01My40OTFjMzMuODY5LDAsNTkuNDEsMjguMjc3LDU5LjQxLDY1Ljc3M0MzOTYuNjYzLDEyMi45MzcsMzgyLjU0MiwxNDYuODQ1LDM0Ni4yOTksMTgxLjA0MXoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBhdGggZD0iTTQ2Ni45NTQsMzAyLjA0N2MtMTIuNDQxLDAtMjQuNDQyLDUuMjIzLTMyLjkyNSwxNC4zMjlsLTQ0LjA3Nyw0Ny4zMThjLTUuNjk3LTE4LjMxNi0yMi44MDUtMzEuNjUzLTQyLjk3MS0zMS42NTNoLTY5LjI4ICAgIGMtOS42OTksMC0xOS4wNTItMy41MjktMjYuMzM0LTkuOTM3Yy0zOS4xNjMtMzQuNDY0LTk4LjAyOS0zNC43NjctMTM3LjU2NC0wLjk1M2MtOC4xNTMtMTEuNTQzLTIxLjU4Ny0xOS4xMDMtMzYuNzYzLTE5LjEwMyAgICBIMTUuMDU0Yy04LjI4MiwwLTE0Ljk5Nyw2LjcxNC0xNC45OTcsMTQuOTk3djE3OS45NmMwLDguMjgyLDYuNzE0LDE0Ljk5NywxNC45OTcsMTQuOTk3SDc3LjA0ICAgIGMxMy40NjgsMCwyNS41NjQtNS45NTcsMzMuODE2LTE1LjM2NWw4Ljg4MSwyLjQ5NmMzMC4zNzgsOC41MzksNjEuNzgsMTIuODY4LDkzLjMzNSwxMi44NjhIMzQ2Ljk4ICAgIGMzMi44NjYsMCw2NC4yNjEtMTUuNjk4LDgzLjk4MS00MS45OTFsNzEuOTk5LTk1Ljk5N2MwLjAwMS0wLjAwMiwwLjAwMi0wLjAwNCwwLjAwNC0wLjAwNmM1Ljg3NS03LjgzNCw4Ljk4LTE3LjE2LDguOTgtMjYuOTcxICAgIEM1MTEuOTQ0LDMyMi4yMjksNDkxLjc2MSwzMDIuMDQ3LDQ2Ni45NTQsMzAyLjA0N3ogTTkyLjAzNyw0NjcuMDFjMCw4LjI2OS02LjcyNywxNC45OTctMTQuOTk3LDE0Ljk5N2gtNDYuOTlWMzMyLjA0aDQ2Ljk5ICAgIGM4LjI2OSwwLDE0Ljk5Nyw2LjcyNywxNC45OTcsMTQuOTk3VjQ2Ny4wMXogTTQ3OC45NjcsMzU2LjAxNGMwLDAuMDAxLTAuMDAxLDAuMDAxLTAuMDAyLDAuMDAybC03MS45OTgsOTUuOTk5ICAgIGMtMTQuMDg2LDE4Ljc4MS0zNi41MTEsMjkuOTkzLTU5Ljk4NywyOS45OTNIMjEzLjA3NWMtMjguODExLDAtNTcuNDgzLTMuOTUzLTg1LjIxOS0xMS43NDlsLTUuODY1LTEuNjQ5ICAgIGMwLjAxOS0wLjUzMiwwLjA0MS0xLjA2MywwLjA0MS0xLjU5OVYzNTMuODE2bDEwLjQ1MS05LjE5N2MyOC4yNC0yNC44NSw3MC44MzEtMjQuODUyLDk5LjA3MywwICAgIGMxMi43NjEsMTEuMjI5LDI5LjE0OCwxNy40MTMsNDYuMTQ3LDE3LjQxM2g2OS4yOGM4LjI2OSwwLDE0Ljk5Nyw2LjcyOCwxNC45OTcsMTQuOTk3YzAsOC4yNjktNi43MjcsMTQuOTk3LTE0Ljk5NywxNC45OTcgICAgSDI0MC4zOThjLTguMjgyLDAtMTQuOTk3LDYuNzE0LTE0Ljk5NywxNC45OTdzNi43MTQsMTQuOTk3LDE0Ljk5NywxNC45OTdoMTE2LjYzNGMxMi40NDEsMCwyNC40NC01LjIyMSwzMi45MjEtMTQuMzI1ICAgIGw2Ni4wMjMtNzAuODc2YzIuODcxLTMuMDgyLDYuNzctNC43NzksMTAuOTc4LTQuNzc5YzguMjY5LDAsMTQuOTk3LDYuNzI3LDE0Ljk5NywxNC45OTcgICAgQzQ4MS45NTEsMzUwLjMwNyw0ODAuOTE5LDM1My40MTEsNDc4Ljk2NywzNTYuMDE0eiIgZmlsbD0iIzg4ODg4OCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4="
+                            alt="Icone mão com coração" /> Apoie
+                    </a>
+                </div>
+                <div class="col-md-4 footer-cards text-start">
+                    <p>
+                        Quer ficar por dentro de todos os updates e novidades em primeira mão?<br />
+                        Então acesse nosso servidor do Discord e não perca nada.
+                    </p>
+                    <a href="https://discord.com/invite/a354PqvNWn" target="_blank" rel="noopener">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zLjU4IDIxLjE5NmgxNC4yNTlsLS42ODEtMi4yMDUgMS42MjkgMS4zOTggMS40OTMgMS4zMzggMi43MiAyLjI3M3YtMjEuNTI1Yy0uMDY4LTEuMzM4LTEuMjItMi40NzUtMi42NDgtMi40NzVsLTE2Ljc2Ny4wMDNjLTEuNDI3IDAtMi41ODUgMS4xMzktMi41ODUgMi40Nzd2MTYuMjRjMCAxLjQxMSAxLjE1NiAyLjQ3NiAyLjU4IDIuNDc2em0xMC41NDgtMTUuNTEzLS4wMzMuMDEyLjAxMi0uMDEyem0tNy42MzEgMS4yNjljMS44MzMtMS4zMzQgMy41MzItMS4yNyAzLjUzMi0xLjI3bC4xMzcuMTM1Yy0yLjI0My41MzUtMy4yNiAxLjUzNy0zLjI2IDEuNTM3cy4yNzItLjEzMy43NDctLjMzNmMzLjAyMS0xLjE4OCA2LjMyLTEuMTAyIDkuMzc0LjQwMiAwIDAtMS4wMTktLjkzNy0zLjEyNC0xLjUzN2wuMTg2LS4xODNjLjI5MS4wMDEgMS44MzEuMDU1IDMuNDc5IDEuMjYgMCAwIDEuODQ0IDMuMTUgMS44NDQgNy4wMi0uMDYxLS4wNzQtMS4xNDQgMS42NjYtMy45MzEgMS43MjYgMCAwLS40NzItLjUzNC0uODA4LTEgMS42My0uNDY4IDIuMjQtMS40MDQgMi4yNC0xLjQwNC0uNTM1LjMzNy0xLjAyMy41MzctMS40MTkuNzM3LS42MDkuMjY4LTEuMjE5LjQtMS44MjguNTM1LTIuODg0LjQ2OC00LjUwMy0uMzE1LTYuMDMzLS45MzZsLS41MjMtLjI2NnMuNjA5LjkzNiAyLjE3NCAxLjQwNGMtLjQxMS40NjktLjgxOCAxLjAwMi0uODE4IDEuMDAyLTIuNzg2LS4wNjYtMy44MDItMS44MDYtMy44MDItMS44MDYgMC0zLjg3NiAxLjgzMy03LjAyIDEuODMzLTcuMDJ6IiBmaWxsPSIjODg4ODg4IiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMTQuMzA4IDEyLjc3MWMuNzExIDAgMS4yOS0uNiAxLjI5LTEuMzQgMC0uNzM1LS41NzYtMS4zMzUtMS4yOS0xLjMzNXYuMDAzYy0uNzA4IDAtMS4yODguNTk4LTEuMjkgMS4zMzggMCAuNzM0LjU3OSAxLjMzNCAxLjI5IDEuMzM0eiIgZmlsbD0iIzg4ODg4OCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTkuNjkgMTIuNzcxYy43MTEgMCAxLjI5LS42IDEuMjktMS4zNCAwLS43MzUtLjU3NS0xLjMzNS0xLjI4Ni0xLjMzNWwtLjAwNC4wMDNjLS43MTEgMC0xLjI5LjU5OC0xLjI5IDEuMzM4IDAgLjczNC41NzkgMS4zMzQgMS4yOSAxLjMzNHoiIGZpbGw9IiM4ODg4ODgiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9zdmc+"
+                            alt="Logo Discord" /> Discord
+                    </a>
+                    <!--<form>
               <div class="mb-3 form-inline">
                 <label for="NewsInputEmail" class="visually-hidden">Email</label>
                 <input type="email" class="form-control input-news d-inline form-control-sm" id="NewsInputEmail" placeholder="nome@exemplo.com.br">
                 <button type="submit" class="btn btn-news d-inline btn-sm ps-2 pe-2">CADASTRAR</button>
               </div>
             </form>-->
-          </div>
-        </section>
-        <section class="row">
-          <div class="col copyright">
-            <hr/>
-            &copy; [ <a href="https://twitch.tv/brandaozzz" target="_blank" rel="noopener">Rodrigo Brandão</a> | <a href="https://twitch.tv/xtart" target="_blank" rel="noopener">Sony Linhares</a> | <a href="https://twitch.tv/tchepper" target="_blank" rel="noopener">Lucas Linhares</a> ] <span id="year"></span>
-          </div>
-        </section>
-      </article>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col copyright">
+                    <hr />
+                    &copy; [ <a href="https://twitch.tv/brandaozzz" target="_blank" rel="noopener">Rodrigo Brandão</a> |
+                    <a href="https://twitch.tv/xtart" target="_blank" rel="noopener">Sony Linhares</a> | <a
+                        href="https://twitch.tv/tchepper" target="_blank" rel="noopener">Lucas Linhares</a> ] <span
+                        id="year"></span>
+                </div>
+            </section>
+        </article>
     </footer>
 
     <!--Modal-->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Apoie</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="assets/img/QRINDICA.png" class="img-fluid" alt="Qrcode">
-          </div>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Apoie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/QRINDICA.png" class="img-fluid" alt="Qrcode">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <!--Bootstrap Bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
     <!--Custom Script-->
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
