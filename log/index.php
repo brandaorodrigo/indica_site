@@ -42,9 +42,9 @@ $pdo = new PDO('mysql:host=' . $db_host .';dbname=' . $db_base, $db_user, $db_pa
     <body>
     <?php
     $qtd_indica = select("SELECT count(*) AS qtd FROM `indica`");
-    $streamer_usando = select("SELECT * FROM (SELECT `caller` AS canal, count(*) AS qtd FROM `indica` GROUP BY `caller`) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
-    $streamer_indicado = select("SELECT * FROM (SELECT channel AS canal, count(*) AS qtd FROM `indica` GROUP BY channel) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
-    $jogo_jogado = select("SELECT * FROM (SELECT i.game, count(*) AS qtd FROM (SELECT DISTINCT channel, game FROM indica) AS i GROUP BY i.game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
+    $streamer_usando = select("SELECT * FROM (SELECT `caller` AS canal, count(*) AS qtd FROM `logs` GROUP BY `caller`) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
+    $streamer_indicado = select("SELECT * FROM (SELECT channel AS canal, count(*) AS qtd FROM `logs` GROUP BY channel) sub WHERE sub.canal != '' ORDER BY sub.qtd DESC");
+    $jogo_jogado = select("SELECT * FROM (SELECT i.game, count(*) AS qtd FROM (SELECT DISTINCT channel, game FROM `logs`) AS i GROUP BY i.game) sub  WHERE sub.game != '' ORDER BY sub.qtd DESC");
     if (!$_SESSION['login']) : ?>
         <div style="margin:40px auto;display:block;width:300px;text-align:center;">
             <form method="post">
@@ -72,7 +72,7 @@ $pdo = new PDO('mysql:host=' . $db_host .';dbname=' . $db_base, $db_user, $db_pa
         <table>
         <tr><th>#</th><th>JOGO</th><th>QTD</th></tr>
         <?php foreach ($jogo_jogado as $i => $s) : ?>
-            <tr><td><?php echo $i + 1 ?></td><td><?php echo $s->game ?></td><td><?php echo $s->qtd ?></td></tr>
+            <tr><td><?php echo $i + 1 ?></td><td><a target="_blank" href="https://www.twitch.tv/directory/game/<?php echo $s->game ?>"><?php echo $s->game ?></a></td><td><?php echo $s->qtd ?></td></tr>
         <?php endforeach ?>
         </table>
     <?php endif ?>
