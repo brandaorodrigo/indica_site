@@ -194,3 +194,24 @@ window.onload = function(){
       }
   }
 };*/
+
+var popup = document.getElementById('news-popup');
+document.addEventListener("DOMContentLoaded", function () {
+    popup.classList.add('h-100');
+    document.body.classList.add("overflow-hidden");
+});
+document.addEventListener('wheel', function (e) {
+    popup.classList.remove('h-100');
+    setTimeout(function () {
+        document.body.classList.remove("overflow-hidden");
+    }, 500);
+});
+
+var scrollIcon = document.getElementById('btn-scroll');
+scrollIcon.addEventListener('click', function (e) {
+    popup.classList.remove('h-100');
+    popup.classList.add('d-none');
+    setTimeout(function () {
+        document.body.classList.remove("overflow-hidden");
+    }, 500);
+});

@@ -1,12 +1,40 @@
 body {
     padding-top: 66px;
-    font-family: 'Ubuntu', sans-serif !important;
+    font-family: 'Varela', sans-serif !important;
     font-weight: 300;
     scroll-behavior: smooth;
 }
 
 *:focus {
     outline: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.btn-tutorial {
+    background: #313539;
+    border-radius: 0 0 6px 6px;
+    padding: 8px;
+    margin: 0 0 50px 0;
+}
+
+.bg-white {
+    background-color: #313539 !important
+}
+
+.numeric-info {
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+    background: #ccee00;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 7px 0 0;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
 }
 
 /*Header*/
@@ -23,8 +51,8 @@ body {
 }
 
 .logo {
-    background: #444;
-    color: #fff;
+    background: transparent;
+    color: #16181b;
     display: block;
     font-family: "Ubuntu" !important;
     font-weight: 700 !important;
@@ -34,11 +62,23 @@ body {
     height: 40px;
     line-height: 40px;
     font-size: 30px;
-    -webkit-animation: color_change 12s infinite alternate;
-    -moz-animation: color_change 12s infinite alternate;
-    -ms-animation: color_change 12s infinite alternate;
-    -o-animation: color_change 12s infinite alternate;
-    animation: color_change 12s infinite alternate;
+    /* -webkit-animation: color_change 12s infinite alternate;
+  -moz-animation: color_change 12s infinite alternate;
+  -ms-animation: color_change 12s infinite alternate;
+  -o-animation: color_change 12s infinite alternate;
+  animation: color_change 12s infinite alternate;*/
+}
+
+.logo span {
+    z-index: 1;
+}
+
+.logo img {
+    left: -10px;
+    top: -10px;
+    width: 60px;
+    animation: color_change 12s infinite linear;
+    z-index: -1;
 }
 
 .nav-link {
@@ -308,91 +348,275 @@ footer .copyright a {
 /*Logo Animation*/
 
 @-webkit-keyframes color_change {
-    0% {
-        background-color: #fce441;
+    from {
+        -webkit-transform: rotate(0deg);
     }
-    25% {
-        background-color: #5df6a5;
-    }
-    50% {
-        background-color: #5ec4e2;
-    }
-    75% {
-        background-color: #c17bee;
-    }
-    100% {
-        background-color: #d74459;
+    to {
+        -webkit-transform: rotate(360deg);
     }
 }
 
-@-moz-keyframes color_change {
+/*@-webkit-keyframes color_change{
+  0%{
+    background-color: #fce441;
+  }
+  25%{
+    background-color: #5df6a5;
+  }
+  50%{
+    background-color: #5ec4e2;
+  }
+  75%{
+    background-color: #c17bee;
+  }
+  100%{
+    background-color: #d74459;
+  }
+}
+
+@-moz-keyframes color_change{
+  0%{
+    background-color: #fce441;
+  }
+  25%{
+    background-color: #5df6a5;
+  }
+  50%{
+    background-color: #5ec4e2;
+  }
+  75%{
+    background-color: #c17bee;
+  }
+  100%{
+    background-color: #d74459;
+  }
+}
+
+@-ms-keyframes color_change{
+  0%{
+    background-color: #fce441;
+  }
+  25%{
+    background-color: #5df6a5;
+  }
+  50%{
+    background-color: #5ec4e2;
+  }
+  75%{
+    background-color: #c17bee;
+  }
+  100%{
+    background-color: #d74459;
+  }
+}
+
+@-o-keyframes color_change{
+  0%{
+    background-color: #fce441;
+  }
+  25%{
+    background-color: #5df6a5;
+  }
+  50%{
+    background-color: #5ec4e2;
+  }
+  75%{
+    background-color: #c17bee;
+  }
+  100%{
+    background-color: #d74459;
+  }
+}
+
+@keyframes color_change{
+  0%{
+    background-color: #fce441;
+  }
+  25%{
+    background-color: #5df6a5;
+  }
+  50%{
+    background-color: #5ec4e2;
+  }
+  75%{
+    background-color: #c17bee;
+  }
+  100%{
+    background-color: #d74459;
+  }
+}*/
+
+/*POPUP*/
+
+#news-popup {
+    height: 0px;
+    transition: all .5s ease-out;
+    top: 50%;
+    background: #16181b;
+}
+
+#news-popup.h-100 {
+    top: 0;
+}
+
+#news-popup .content-box {
+    align-items: center;
+}
+
+#news-popup.h-100 .content-box .container {
+    z-index: 3;
+    color: #fff;
+    padding: 0 120px;
+    text-align: justify;
+}
+
+#news-popup .content-box .container p, #news-popup .content-box .container h1 {
+    opacity: 0;
+}
+
+#news-popup.h-100 .content-box .container p, #news-popup.h-100 .content-box .container h1 {
+    opacity: 1;
+}
+
+#news-popup.h-100 .content-box .container h1 {
+    transition: opacity 1s ease-out .8s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(1) {
+    transition: opacity 1s ease-out 1s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(2) {
+    transition: opacity 1s ease-out 1.4s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(3) {
+    transition: opacity 1s ease-out 1.8s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(4) {
+    transition: opacity 1s ease-out 2.2s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(5) {
+    transition: opacity 1s ease-out 2.6s;
+}
+
+#news-popup.h-100 .content-box .container p:nth-of-type(6) {
+    transition: opacity 1s ease-out 3s;
+}
+
+/*Scroll Icon*/
+
+.scroll-icon-box {
+    position: absolute;
+    z-index: 3;
+    bottom: 10px;
+    color: #fff;
+}
+
+.scroll-icon__wheel-outer {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: .6em;
+    height: 1em;
+    width: .4em;
+    margin-left: -.2em;
+    border-radius: .4em;
+    overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    background: #fff;
+    animation: scroll 2.75s ease-in-out infinite;
+}
+
+.scroll-icon {
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 2em;
+    border: .20em solid #fff;
+    border-radius: 1em;
+}
+
+@keyframes scroll {
     0% {
-        background-color: #fce441;
+        transform: translateY(0);
     }
     25% {
-        background-color: #5df6a5;
+        transform: translateY(-0.6em);
     }
     50% {
-        background-color: #5ec4e2;
+        transform: translateY(0);
     }
     75% {
-        background-color: #c17bee;
+        transform: translateY(0.6em);
     }
     100% {
-        background-color: #d74459;
+        transform: translateY(0);
     }
 }
 
-@-ms-keyframes color_change {
-    0% {
-        background-color: #fce441;
-    }
-    25% {
-        background-color: #5df6a5;
-    }
-    50% {
-        background-color: #5ec4e2;
-    }
-    75% {
-        background-color: #c17bee;
-    }
-    100% {
-        background-color: #d74459;
-    }
+/*Scroll Icon*/
+
+#news-popup .overlay {
+    background: rgb(0 0 0 / 50%);
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
 }
 
-@-o-keyframes color_change {
-    0% {
-        background-color: #fce441;
-    }
-    25% {
-        background-color: #5df6a5;
-    }
-    50% {
-        background-color: #5ec4e2;
-    }
-    75% {
-        background-color: #c17bee;
-    }
-    100% {
-        background-color: #d74459;
-    }
+#news-popup.h-100 .overlay {
+    opacity: 1;
+    transition: opacity .5s ease-out .5s;
 }
 
-@keyframes color_change {
-    0% {
-        background-color: #fce441;
+#news-popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .1;
+    display: block;
+    width: 0;
+    max-width: 342px;
+    z-index: 1;
+}
+
+#news-popup.h-100 img {
+    width: 100%;
+    transition: width 1.5s ease-out .8s;
+}
+
+#news-popup .popup-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+    #news-popup .content-box {
+        align-items: start;
     }
-    25% {
-        background-color: #5df6a5;
-    }
-    50% {
-        background-color: #5ec4e2;
-    }
-    75% {
-        background-color: #c17bee;
-    }
-    100% {
-        background-color: #d74459;
+    #news-popup.h-100 .content-box .container {
+        padding: 1rem;
+        overflow-y: scroll;
+        height: calc(100% - 92px);
     }
 }
