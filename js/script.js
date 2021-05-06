@@ -63,7 +63,7 @@ const clickToCopyEl = document.querySelectorAll(".copy .code");
 clickToCopyEl.forEach(e => {
     e.setAttribute('data-bs-toggle', 'tooltip');
     e.setAttribute('data-bs-html', 'true');
-    e.setAttribute('title', 'Clique para copiar.');
+    e.setAttribute('title', 'CLIQUE PARA COPIAR');
 })
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
