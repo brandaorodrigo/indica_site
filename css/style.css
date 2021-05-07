@@ -393,7 +393,7 @@ footer .copyright a {
 
 /*Logo Animation*/
 
-@-webkit-keyframes color_change {
+@keyframes color_change {
     from {
         -webkit-transform: rotate(0deg);
     }
