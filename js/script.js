@@ -78,7 +78,7 @@ document.addEventListener('click', function (e) {
     if (target.className == "code") {
         var checkContent = target.textContent.replaceAll(/(\r\n|\n|\r)/gm, "")
         checkContent = checkContent.replaceAll(/\s/g, '')
-        if (checkContent != "(apagartudoedeixarvazio)" && checkContent != "(nãoprecisaalterar)") {
+        if (checkContent != "//apagartudoedeixarvazio") {
             var range = document.createRange();
             range.selectNode(target);
             window.getSelection().removeAllRanges();
@@ -86,8 +86,8 @@ document.addEventListener('click', function (e) {
             document.execCommand("copy");
             window.getSelection().removeAllRanges();
 
-            target.style.background = "#d1e7dd";
-            target.style.color = "#0f5132";
+            target.style.background = "#ffffff";
+            target.style.color = "#777777";
             setTimeout(function () {
                 target.removeAttribute("style");
             }, 1000);
