@@ -12,9 +12,10 @@ body {
 
 @media (min-width: 1200px) {
     .fs-4 {
-        font-size: 1.6rem!important;
+        font-size: 1.6rem !important;
         letter-spacing: 1.5px;
     }
+
     .container.mini {
         max-width: 800px;
     }
@@ -58,12 +59,16 @@ strong {
     background-color: #313539 !important
 }
 
+h4 {
+    margin-top: 30px !important;
+}
+
 .numeric-info {
     width: 28px;
     height: 28px;
     line-height: 28px;
     float: left;
-    background-image: url('../assets/img/indica_logo_bg_v2.png');
+    background-image: url('../img/indica_logo_bg_v2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     text-align: center;
@@ -72,6 +77,16 @@ strong {
     color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
     font-weight: 700;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4);
+    padding: 5px 0 0 0;
+}
+
+.talk {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 /*Header*/
@@ -194,7 +209,8 @@ strong {
     font-weight: 700;
 }
 
-.btn-check:focus+.btn, .btn:focus {
+.btn-check:focus+.btn,
+.btn:focus {
     outline: 0;
     box-shadow: none;
 }
@@ -209,7 +225,10 @@ main article .container p {
     text-align: justify;
 }
 
-section, h2, h3, h4 {
+section,
+h2,
+h3,
+h4 {
     position: relative;
     color: #fff;
 }
@@ -386,6 +405,7 @@ footer .copyright a {
     main article .container {
         padding: 1rem;
     }
+
     .header {
         height: auto;
     }
@@ -397,6 +417,7 @@ footer .copyright a {
     from {
         -webkit-transform: rotate(0deg);
     }
+
     to {
         -webkit-transform: rotate(360deg);
     }
@@ -516,11 +537,13 @@ footer .copyright a {
     text-align: justify;
 }
 
-#news-popup .content-box .container p, #news-popup .content-box .container h1 {
+#news-popup .content-box .container p,
+#news-popup .content-box .container h1 {
     opacity: 0;
 }
 
-#news-popup.h-100 .content-box .container p, #news-popup.h-100 .content-box .container h1 {
+#news-popup.h-100 .content-box .container p,
+#news-popup.h-100 .content-box .container h1 {
     opacity: 1;
 }
 
@@ -595,15 +618,19 @@ footer .copyright a {
     0% {
         transform: translateY(0);
     }
+
     25% {
         transform: translateY(-0.6em);
     }
+
     50% {
         transform: translateY(0);
     }
+
     75% {
         transform: translateY(0.6em);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -660,6 +687,7 @@ footer .copyright a {
     #news-popup .content-box {
         align-items: start;
     }
+
     #news-popup.h-100 .content-box .container {
         padding: 1rem;
         overflow-y: scroll;
