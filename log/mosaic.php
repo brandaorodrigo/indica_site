@@ -53,7 +53,8 @@ foreach ($channels as $key => $value) {
             img {
                 margin: 0 auto;
                 display: block;
-                width: 100%;
+                width: 96px;
+                height:96px;
             }
             article {
                 background:#444;
